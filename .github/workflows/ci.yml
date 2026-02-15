@@ -21,7 +21,7 @@ jobs:
 
       - name: Test Simulation
         run: echo "No tests configured"
-            - name: Notify Slack
+      - name: Notify Slack
         if: always()
         run: |
           curl -X POST -H "Content-type: application/json" \
